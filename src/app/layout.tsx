@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${merienda.className} antialiased`}>{children}</body>
+      <body
+        className={`${merienda.className} text-foreground bg-background antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
