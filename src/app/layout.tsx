@@ -72,8 +72,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://lincie.me/og-image.png",
-        width: 512,
-        height: 512,
+        width: 1200,
+        height: 630,
         alt: "LinCie",
       },
     ],
