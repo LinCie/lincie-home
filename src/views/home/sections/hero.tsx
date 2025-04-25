@@ -70,11 +70,11 @@ function HomeHeroSection() {
       await Promise.all([
         titleControl.start({
           opacity: 1,
-          y: 0,
+          x: 0,
           transition: {
             duration,
             delay: baseDelay * 0,
-            ease: "easeInOut",
+            ease: "easeOut",
             type: "tween",
           },
         }),
@@ -84,7 +84,7 @@ function HomeHeroSection() {
           transition: {
             duration,
             delay: baseDelay * 1,
-            ease: "easeInOut",
+            ease: "easeOut",
             type: "tween",
           },
         }),
@@ -94,7 +94,7 @@ function HomeHeroSection() {
           transition: {
             duration,
             delay: baseDelay * 2,
-            ease: "easeInOut",
+            ease: "easeOut",
             type: "tween",
           },
         }),
@@ -108,7 +108,7 @@ function HomeHeroSection() {
     <section className="flex flex-col-reverse items-center gap-2 md:flex-row md:items-start md:justify-between md:gap-3">
       <div className="space-y-2">
         <motion.h1
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, x: -10 }}
           animate={titleControl}
           className="text-lg font-bold md:text-xl"
         >
@@ -144,7 +144,7 @@ function HomeHeroSection() {
           animate={imageControl}
           className="h-auto w-40 rounded-2xl shadow-lg md:w-36"
         />
-        <div className="flex w-48 flex-wrap justify-center gap-1 md:w-36">
+        <div className="flex w-40 flex-wrap justify-center gap-1 md:w-36">
           {socials.map((social, index) => (
             <MotionLink
               key={`hero-social-${social.alt}`}
@@ -156,9 +156,9 @@ function HomeHeroSection() {
               transition={{
                 duration: 0.4,
                 delay: 0.3 + index * 0.1,
-                ease: "easeInOut",
+                ease: "easeOut",
               }}
-              className="rounded-full p-2 hover:bg-white/10 md:p-1 [&_svg]:size-5"
+              className="rounded-full p-1 hover:bg-white/10 [&_svg]:size-5"
             >
               {social.icon}
             </MotionLink>
