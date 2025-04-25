@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     title: "LinCie | Home",
     description:
       "Marketing undergrad & self-taught dev from Indonesia. Built websites, a Discord bot, mobile app & APIs. TypeScript specialist.",
-    images: ["https://lincie.dev/twitter-card.png"],
+    images: ["https://lincie.me/twitter-card.png"],
   },
 };
 
