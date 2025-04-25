@@ -130,9 +130,10 @@ function HomeHeroSection() {
           animate={subtitleControl}
           className="text-sm leading-relaxed"
         >
-          I&apos;m also a game addict, mainly playing RPG and RTS games, and a
-          huge anime fan, especially Iyashikei and CGDCT genre. I&apos;ve been
-          exposed to the digital world ever since I was three.
+          I&apos;m a game addict, mainly playing Rhythm, RPG and RTS games.
+          I&apos;m also a huge anime fan, especially Iyashikei and CGDCT genre.
+          I&apos;ve been exposed to the digital world ever since I was three,
+          making me well versed about the goods, and the bads of the internet.
         </motion.p>
       </div>
       <div className="flex shrink-0 flex-col items-center justify-center gap-2">
