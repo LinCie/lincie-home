@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Merienda } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/footer";
 
 const merienda = Merienda({ subsets: ["latin"] });
 
@@ -102,6 +103,7 @@ export default function RootLayout({
         className={`${merienda.className} text-foreground bg-background antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
